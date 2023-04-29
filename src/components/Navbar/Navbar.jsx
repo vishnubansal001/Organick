@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import logo from "../../assets/logo.svg";
+import search from "../../assets/search.svg";
+import cart from "../../assets/cart.svg";
 
 const Navbar = () => {
   const [item, setItem] = useState(0);
@@ -36,7 +39,7 @@ const Navbar = () => {
           <div>
             <div>
               <div>
-                <img src="" alt="" />
+                <img src={logo} alt="" />
               </div>
               <div>
                 <div>
@@ -51,11 +54,11 @@ const Navbar = () => {
             <div>
               <div>
                 <div>
-                  <img src="" alt="" />
+                  <img src={search} alt="" />
                 </div>
                 <div>
                   <div>
-                    <img src="" alt="" />
+                    <img src={cart} alt="" />
                   </div>
                   <div>
                     <p>Cart {`(${item})`}</p>
