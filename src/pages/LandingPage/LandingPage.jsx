@@ -1,7 +1,6 @@
-import React from 'react'
-import Hero from '../../containers/LandingPage/Hero'
-import Flex1 from '../../containers/LandingPage/Flex1'
-import Farmers from '../../containers/LandingPage/Farmers'
+import React from 'react';
+import { Farmers, Flex1, Hero, Products } from '../../containers/LandingPage';
+
 
 const LandingPage = () => {
   return (
@@ -9,6 +8,7 @@ const LandingPage = () => {
       <Hero/>
       <Flex1/>
       <Farmers/>
+      <Products/>
     </>
   )
 }
