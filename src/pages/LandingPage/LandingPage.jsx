@@ -1,5 +1,5 @@
 import React from 'react';
-import { Farmers, Flex1, Hero, Products,Customer, Offer, Store } from '../../containers/LandingPage';
+import { Farmers, Flex1, Hero, Products,Customer, Offer, Store, Sections } from '../../containers/LandingPage';
 // import Customer from '../../containers/LandingPage/customer';
 
 
@@ -13,6 +13,7 @@ const LandingPage = () => {
       {/* <Customer/> */}
       <Offer/>
       <Store/>
+      <Sections/>
     </>
   )
 }
