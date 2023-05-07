@@ -1,5 +1,5 @@
 import React from 'react';
-import { Farmers, Flex1, Hero, Products,Customer, Offer, Store, Sections, Discover } from '../../containers/LandingPage';
+import { Farmers, Flex1, Hero, Products,Customer, Offer, Store, Sections, Discover, Subscribe } from '../../containers/LandingPage';
 
 const LandingPage = () => {
   return (
@@ -13,6 +13,7 @@ const LandingPage = () => {
       <Store/>
       <Sections/>
       <Discover/>
+      <Subscribe/>
     </>
   )
 }
