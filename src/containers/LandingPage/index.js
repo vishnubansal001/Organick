@@ -6,3 +6,4 @@ export {default as Customer} from './Customer.jsx';
 export {default as Offer} from './Offer.jsx';
 export {default as Store} from './Store.jsx';
 export {default as Sections} from './Sections.jsx';
+export {default as Discover} from './Discover.jsx';
