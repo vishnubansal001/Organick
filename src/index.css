@@ -428,3 +428,12 @@
          
     }
   }
+  .background{
+    background-image: none;
+  }
+  @media (max-width: 768px) {
+    .background{
+      background-image: url('./assets/store.svg');
+    }
+  
+}
