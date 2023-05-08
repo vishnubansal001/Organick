@@ -1,10 +1,10 @@
 import React from "react";
-import bacardo from "../../assets/bacardo.svg";
+import bacardo from "../../assets/bacardo.png";
 import loreno from "../../assets/loreno.svg";
 import pelore from "../../assets/pelore.svg";
-import insta from "../../assets/insta.svg";
-import face from "../../assets/face.svg";
-import twitter from "../../assets/twitter.svg";
+import insta from "../../assets/insta.png";
+import face from "../../assets/face.png";
+import twitter from "../../assets/twitter.png";
 
 const Experts = () => {
   const experts = [

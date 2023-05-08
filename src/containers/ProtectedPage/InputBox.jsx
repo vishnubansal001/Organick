@@ -1,5 +1,5 @@
 import React from "react";
-import inputbox from "../../assets/inputbox.svg";
+import inputbox from "../../assets/inputbox.png";
 
 const InputBox = () => {
   return (

@@ -433,7 +433,7 @@
   }
   @media (max-width: 768px) {
     .background{
-      background-image: url('./assets/store.svg');
+      background-image: url('./assets/store.png');
     }
   
 }

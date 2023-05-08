@@ -1,5 +1,5 @@
 import React from "react";
-import img from "../../assets/store.svg";
+import img from "../../assets/store.png";
 
 const Store = () => {
   const store = [

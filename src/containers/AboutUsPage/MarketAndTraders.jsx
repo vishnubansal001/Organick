@@ -1,10 +1,10 @@
 import React from "react";
-import circle from "../../assets/circle.svg";
-import returnP from "../../assets/returnP.svg";
-import fresh from "../../assets/fresh.svg";
-import support from "../../assets/support.svg";
-import secure from "../../assets/secure.svg";
-import market from "../../assets/market.svg";
+import circle from "../../assets/circle.png";
+import returnP from "../../assets/returnP.png";
+import fresh from "../../assets/fresh.png";
+import support from "../../assets/support.png";
+import secure from "../../assets/secure.png";
+import market from "../../assets/market.png";
 
 const MarketAndTraders = () => {
   const thinking = [

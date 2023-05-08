@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../../assets/logo.svg";
-import insta from "../../assets/insta.svg";
-import face from "../../assets/face.svg";
-import twitter from "../../assets/twitter.svg";
-import pint from "../../assets/pint.svg";
+import logo from "../../assets/logo.png";
+import insta from "../../assets/insta.png";
+import face from "../../assets/face.png";
+import twitter from "../../assets/twitter.png";
+import pint from "../../assets/pint.png";
 
 const Footer = () => {
   const contact = [

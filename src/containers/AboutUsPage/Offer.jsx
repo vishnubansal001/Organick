@@ -1,4 +1,8 @@
 import React from "react";
+import mungBean from "../../assets/mungBean.png";
+import Bhazelnut from "../../assets/Bhazelnut.png";
+import onion from "../../assets/onion.png";
+import cabbage from "../../assets/cabbage.png";
 
 const Offer = () => {
   const offers = [

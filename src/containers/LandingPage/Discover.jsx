@@ -1,7 +1,7 @@
 import React from "react";
-import user from "../../assets/user.svg";
-import favourite from "../../assets/favourite.svg";
-import benefits from "../../assets/benefits.svg";
+import user from "../../assets/user.png";
+import favourite from "../../assets/favourite.png";
+import benefits from "../../assets/benefits.png";
 
 const Dsicover = () => {
   const discover = [

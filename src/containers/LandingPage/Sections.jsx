@@ -1,7 +1,7 @@
 import React from "react";
-import cookis from "../../assets/cookis.svg";
-import food from "../../assets/food.svg";
-import juice from "../../assets/juice.svg";
+import cookis from "../../assets/cookis.png";
+import food from "../../assets/food.png";
+import juice from "../../assets/juice.png";
 
 const Sections = () => {
   const section = [

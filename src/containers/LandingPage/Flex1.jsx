@@ -1,5 +1,5 @@
 import React from "react";
-import garden from "../../assets/garden.svg";
+import garden from "../../assets/garden.png";
 import vege from "../../assets/vege.svg";
 
 const Flex1 = () => {

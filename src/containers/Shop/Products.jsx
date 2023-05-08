@@ -1,17 +1,17 @@
 import React from "react";
-import broccoli from "../../assets/broccoli.svg";
-import banana from "../../assets/banana.svg";
-import nuts from "../../assets/nuts.svg";
-import tomato from "../../assets/tomato.svg";
-import bean from "../../assets/bean.svg";
-import hazelnut from "../../assets/hazelnut.svg";
-import egg from "../../assets/egg.svg";
-import rusk from "../../assets/rusk.svg";
-import star from "../../assets/star.svg";
-import almonds from '../../assets/almonds.svg';
-import WhiteHazelnut from '../../assets/WhiteHazelnut.svg';
-import corn from '../../assets/corn.svg';
-import MBean from '../../assets/MBean.svg';
+import broccoli from "../../assets/broccoli.png";
+import banana from "../../assets/banana.png";
+import nuts from "../../assets/nuts.png";
+import tomato from "../../assets/tomato.png";
+import bean from "../../assets/bean.png";
+import hazelnut from "../../assets/hazelnut.png";
+import egg from "../../assets/egg.png";
+import rusk from "../../assets/rusk.png";
+import star from "../../assets/star.png";
+import almonds from "../../assets/almonds.png";
+import WhiteHazelnut from "../../assets/WhiteHazelnut.png";
+import corn from "../../assets/corn.png";
+import MBean from "../../assets/MBean.png";
 
 const Products = () => {
   const products = [
@@ -88,41 +88,41 @@ const Products = () => {
       img1: star,
     },
     {
-        id: 9,
-        btn: "Health",
-        img: MBean,
-        txt: "Mung Bean",
-        pCost: "$20.00",
-        cost: "$11.00",
-        img1: star,
-      },
-      {
-        id: 10,
-        btn: "Nuts",
-        img: WhiteHazelnut,
-        txt: "White Hazelnut",
-        pCost: "$20.00",
-        cost: "$12.00",
-        img1: star,
-      },
-      {
-        id: 11,
-        btn: "Fresh",
-        img: corn,
-        txt: "Fresh Cron",
-        pCost: "$20.00",
-        cost: "$17.00",
-        img1: star,
-      },
-      {
-        id: 12,
-        btn: "Fresh",
-        img: almonds,
-        txt: "Organic Almonds",
-        pCost: "$20.00",
-        cost: "$15.00",
-        img1: star,
-      },
+      id: 9,
+      btn: "Health",
+      img: MBean,
+      txt: "Mung Bean",
+      pCost: "$20.00",
+      cost: "$11.00",
+      img1: star,
+    },
+    {
+      id: 10,
+      btn: "Nuts",
+      img: WhiteHazelnut,
+      txt: "White Hazelnut",
+      pCost: "$20.00",
+      cost: "$12.00",
+      img1: star,
+    },
+    {
+      id: 11,
+      btn: "Fresh",
+      img: corn,
+      txt: "Fresh Cron",
+      pCost: "$20.00",
+      cost: "$17.00",
+      img1: star,
+    },
+    {
+      id: 12,
+      btn: "Fresh",
+      img: almonds,
+      txt: "Organic Almonds",
+      pCost: "$20.00",
+      cost: "$15.00",
+      img1: star,
+    },
   ];
   return (
     <>

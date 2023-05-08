@@ -1,8 +1,8 @@
 import React from 'react';
 import { Farmers, Flex1, Hero, Products,Customer, Offer, Store, Sections, Discover, Subscribe } from '../../containers/LandingPage';
 import farmers from '../../assets/farmers.svg';
-import foods from '../../assets/foods.svg';
-import quality from '../../assets/quality.svg';
+import foods from '../../assets/foods.png';
+import quality from '../../assets/quality.png';
 
 const LandingPage = () => {
   const sectionApi = {

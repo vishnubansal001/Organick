@@ -2,9 +2,9 @@ import React from "react";
 import { Experts, Hero, MarketAndTraders } from "../../containers/AboutUsPage";
 import about from "../../assets/about.png";
 import { Farmers, Subscribe } from "../../containers/LandingPage";
-import creative from "../../assets/creative.svg";
-import tractor from "../../assets/tractor.svg";
-import building from "../../assets/building.svg";
+import creative from "../../assets/creative.png";
+import tractor from "../../assets/tractor.png";
+import building from "../../assets/building.png";
 
 const AboutUs = () => {
   const heroSection = {

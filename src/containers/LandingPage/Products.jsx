@@ -1,13 +1,13 @@
 import React from "react";
-import broccoli from "../../assets/broccoli.svg";
-import banana from "../../assets/banana.svg";
-import nuts from "../../assets/nuts.svg";
-import tomato from "../../assets/tomato.svg";
-import bean from "../../assets/bean.svg";
-import hazelnut from "../../assets/hazelnut.svg";
-import egg from "../../assets/egg.svg";
-import rusk from "../../assets/rusk.svg";
-import star from "../../assets/star.svg";
+import broccoli from "../../assets/broccoli.png";
+import banana from "../../assets/banana.png";
+import nuts from "../../assets/nuts.png";
+import tomato from "../../assets/tomato.png";
+import bean from "../../assets/bean.png";
+import hazelnut from "../../assets/hazelnut.png";
+import egg from "../../assets/egg.png";
+import rusk from "../../assets/rusk.png";
+import star from "../../assets/star.png";
 
 const Products = () => {
   const products = [

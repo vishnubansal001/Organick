@@ -1,5 +1,5 @@
 import React from "react";
-import subscribe from "../../assets/subscribe.svg";
+import subscribe from "../../assets/subscribe.png";
 
 const Subscribe = () => {
   return (

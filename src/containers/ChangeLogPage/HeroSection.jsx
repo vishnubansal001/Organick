@@ -1,5 +1,5 @@
 import React from "react";
-import changelog from "../../assets/changelog.svg";
+import changelog from "../../assets/changelog.png";
 
 const HeroSection = () => {
   return (

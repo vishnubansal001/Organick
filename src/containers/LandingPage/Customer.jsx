@@ -7,8 +7,8 @@ import SwiperCore, {
   Pagination,
 } from "swiper";
 import "swiper/css/bundle";
-import customer from "../../assets/Customer.svg";
-import Star from "../../assets/star.svg";
+import customer from "../../assets/Customer.png";
+import Star from "../../assets/star.png";
 import customerbg from "../../assets/customerbg.png";
 
 const Customer = () => {

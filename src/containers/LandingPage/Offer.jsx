@@ -1,9 +1,9 @@
 import React from "react";
-import mungBean from "../../assets/mungBean.svg";
-import Bhazelnut from "../../assets/Bhazelnut.svg";
-import onion from "../../assets/onion.svg";
-import cabbage from "../../assets/cabbage.svg";
-import star from "../../assets/star.svg";
+import mungBean from "../../assets/mungBean.png";
+import Bhazelnut from "../../assets/Bhazelnut.png";
+import onion from "../../assets/onion.png";
+import cabbage from "../../assets/cabbage.png";
+import star from "../../assets/star.png";
 
 const Offer = () => {
   const offers = [

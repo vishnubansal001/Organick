@@ -1,6 +1,6 @@
 import React from "react";
 import { Hero } from "../../containers/AboutUsPage";
-import protecte from '../../assets/protected.svg';
+import protecte from '../../assets/protected.png';
 import { Subscribe } from "../../containers/LandingPage";
 import { InputBox } from "../../containers/ProtectedPage";
 

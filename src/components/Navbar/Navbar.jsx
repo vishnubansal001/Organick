@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import logo from "../../assets/logo.svg";
-import search from "../../assets/search.svg";
-import cart from "../../assets/cart.svg";
+import logo from "../../assets/logo.png";
+import search from "../../assets/search.png";
+import cart from "../../assets/cart.png";
 
 const Navbar = () => {
   const [item, setItem] = useState(0);
