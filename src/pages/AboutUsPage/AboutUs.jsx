@@ -1,5 +1,5 @@
 import React from "react";
-import { Experts, Hero, MarketAndTraders } from "../../containers/AboutUsPage";
+import { Experts, Hero, MarketAndTraders, Offer } from "../../containers/AboutUsPage";
 import about from "../../assets/about.png";
 import { Farmers, Subscribe } from "../../containers/LandingPage";
 import creative from "../../assets/creative.png";
@@ -37,7 +37,7 @@ const AboutUs = () => {
       <Farmers sectionApi={sectionApi} ifExists />
       <MarketAndTraders />
       <Experts />
-      {/* <Offer/> */}
+      <Offer/>
       <Subscribe />
     </>
   );

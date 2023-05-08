@@ -1,6 +1,6 @@
 import React from "react";
 import garden from "../../assets/garden.png";
-import vege from "../../assets/vege.svg";
+import vege from "../../assets/vege.png";
 
 const Flex1 = () => {
   return (
@@ -12,7 +12,7 @@ const Flex1 = () => {
               <img src={garden} alt="img/garden.svg" />
             </div>
             <div>
-              <img src={vege} alt="img/vegetables.svg" />
+              <img src={vege} alt="img/vegetables.svg" className="rounded-[20px] lg:h-[21rem]" />
             </div>
           </div>
         </div>
