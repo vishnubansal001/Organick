@@ -1,5 +1,5 @@
 import React from "react";
-import { Hero } from "../../containers/AboutUsPage";
+import { Hero, MarketAndTraders } from "../../containers/AboutUsPage";
 import about from '../../assets/about.png';
 import { Farmers, Subscribe } from "../../containers/LandingPage";
 import creative from '../../assets/creative.svg';
@@ -35,6 +35,7 @@ const AboutUs = () => {
     <>
       <Hero heroSection={heroSection} />
       <Farmers sectionApi={sectionApi} ifExists />
+      <MarketAndTraders/>
       <Subscribe/>
     </>
   );
