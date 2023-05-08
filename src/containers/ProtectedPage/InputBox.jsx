@@ -6,7 +6,7 @@ const InputBox = () => {
     <>
       <section className="flex select-none flex-col lg:gap-20 md:gap-14 pt-6 gap-10">
         <div className="flex items-center justify-center lg:py-12 md:py-10 py-8">
-          <div className="flex items-center w-[90%] mx-auto flex-row bg-gray-100 px-5 py-6 rounded-[20px] shadow-md hover:shadow-xl transition duration-300 ease-in-out justify-center lg:gap-8 md:gap-6 gap-4">
+          <div className="flex items-center lg:w-auto md:w-auto w-[90%] mx-auto md:flex-row flex-col bg-gray-100 px-5 py-6 rounded-[20px] shadow-md hover:shadow-xl transition duration-300 ease-in-out justify-center lg:gap-8 md:gap-6 gap-4">
             <div>
               <img src={inputbox} alt="" />
             </div>
