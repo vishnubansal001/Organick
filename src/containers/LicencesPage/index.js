@@ -1,0 +1,1 @@
+export {default as HeroSec} from './HeroSec.jsx';
