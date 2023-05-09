@@ -11,6 +11,7 @@ import ShopSingle from "../pages/ShopSinglePage/ShopSingle";
 import Services from "../pages/ServicesPage/Services";
 import Licenses from "../pages/LicensesPage/Licenses";
 import NotFound from "../pages/NotFoundPage/NotFound";
+import Quality from "../pages/QualityPage/Quality";
 
 const Router = () => {
   return (
@@ -27,6 +28,7 @@ const Router = () => {
         <Route exact path="/services" element={<Services />}></Route>
         <Route exact path="/licences" element={<Licenses />}></Route>
         <Route exact path="/page-not-found" element={<NotFound />}></Route>
+        <Route exact path="/quality" element={<Quality />}></Route>
       </Routes>
     </>
   );

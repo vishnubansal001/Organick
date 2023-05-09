@@ -65,7 +65,7 @@ const Future = () => {
                 Better Future
               </h1>
             </div>
-            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-[90%] mx-auto gap-5 items-center justify-center">
+src/containers/LandingPage/Farmers.jsx            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-[90%] mx-auto gap-5 items-center justify-center">
               <div className="flex flex-col justify-center items-end gap-4">
                 {benefits1?.map((item) => (
                   <div
