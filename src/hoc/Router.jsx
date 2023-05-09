@@ -7,6 +7,7 @@ import Protected from "../pages/ProtectedPage/Protected";
 import ChangeLog from "../pages/ChangeLogPage/ChangeLog";
 import OurTeam from "../pages/OurTeamPage/OurTeam";
 import RecentNews from "../pages/RecentNewsPage/RecentNews";
+import ShopSingle from "../pages/ShopSinglePage/ShopSingle";
 
 const Router = () => {
   return (
@@ -19,6 +20,7 @@ const Router = () => {
         <Route exact path="/changelog" element={<ChangeLog />}></Route>
         <Route exact path="/our-team" element={<OurTeam />}></Route>
         <Route exact path="/recent-news" element={<RecentNews />}></Route>
+        <Route exact path="/shop-single" element={<ShopSingle />}></Route>
       </Routes>
     </>
   );
