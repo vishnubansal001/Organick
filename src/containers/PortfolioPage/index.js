@@ -1,0 +1,1 @@
+export {default as MainSec} from './MainSec.jsx';

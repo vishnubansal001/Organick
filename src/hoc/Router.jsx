@@ -12,6 +12,7 @@ import Services from "../pages/ServicesPage/Services";
 import Licenses from "../pages/LicensesPage/Licenses";
 import NotFound from "../pages/NotFoundPage/NotFound";
 import Quality from "../pages/QualityPage/Quality";
+import Portfolio from "../pages/PortfolioPage/Portfolio";
 
 const Router = () => {
   return (
@@ -29,6 +30,7 @@ const Router = () => {
         <Route exact path="/licences" element={<Licenses />}></Route>
         <Route exact path="/page-not-found" element={<NotFound />}></Route>
         <Route exact path="/quality" element={<Quality />}></Route>
+        <Route exact path="/portfolio" element={<Portfolio />}></Route>
       </Routes>
     </>
   );
