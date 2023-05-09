@@ -10,6 +10,7 @@ import RecentNews from "../pages/RecentNewsPage/RecentNews";
 import ShopSingle from "../pages/ShopSinglePage/ShopSingle";
 import Services from "../pages/ServicesPage/Services";
 import Licenses from "../pages/LicensesPage/Licenses";
+import NotFound from "../pages/NotFoundPage/NotFound";
 
 const Router = () => {
   return (
@@ -25,6 +26,7 @@ const Router = () => {
         <Route exact path="/shop-single" element={<ShopSingle />}></Route>
         <Route exact path="/services" element={<Services />}></Route>
         <Route exact path="/licences" element={<Licenses />}></Route>
+        <Route exact path="/page-not-found" element={<NotFound />}></Route>
       </Routes>
     </>
   );
