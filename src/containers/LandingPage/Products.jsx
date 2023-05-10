@@ -8,8 +8,10 @@ import hazelnut from "../../assets/hazelnut.png";
 import egg from "../../assets/egg.png";
 import rusk from "../../assets/rusk.png";
 import star from "../../assets/star.png";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
+  const navigate = useNavigate();
   const products = [
     {
       id: 1,
@@ -101,6 +103,7 @@ const Products = () => {
               {products?.map((item) => (
                 <div
                   key={item.id}
+                  onClick={() => navigate("/shop-single")}
                   className="bg-white p-6 rounded-[20px] shadow-lg hover:shadow-2xl transition ease-in-out duration-300 cursor-pointer flex flex-col justify-center gap-2"
                 >
                   <div className="cursor-pointer">
@@ -131,7 +134,10 @@ const Products = () => {
               ))}
             </div>
             <div className="flex justify-center items-center">
-              <button className="bg-[#274C5B] text-white lg:text-xl md:text-lg text-base font-bold py-3 px-5 rounded-[14px] hover:scale-[1.05] transition ease-in-out duration-300 shadow-lg hover:shadow-xl">
+              <button
+                className="bg-[#274C5B] text-white lg:text-xl md:text-lg text-base font-bold py-3 px-5 rounded-[14px] hover:scale-[1.05] transition ease-in-out duration-300 shadow-lg hover:shadow-xl"
+                onClick={() => navigate("/shop")}
+              >
                 Load More
               </button>
             </div>

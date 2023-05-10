@@ -2,6 +2,7 @@ import React from "react";
 import user from "../../assets/user.png";
 import favourite from "../../assets/favourite.png";
 import benefits from "../../assets/benefits.png";
+import { useNavigate } from "react-router-dom";
 
 const Dsicover = () => {
   const discover = [
@@ -28,6 +29,7 @@ const Dsicover = () => {
       btn: "Read More",
     },
   ];
+  const navigate = useNavigate();
   return (
     <>
       <section className="flex select-none items-center justify-center min-h-screen h-full relative bg-white">
@@ -48,7 +50,10 @@ const Dsicover = () => {
                 </div>
               </div>
               <div>
-                <button className="bg-transparent border-2 border-[#274C5B] text-[#274C5B] px-5 py-3 font-semibold lg:text-xl md:text-lg text-base rounded-[14px] shadow-md hover:shadow-xl transition duration-300 ease-in-out hover:scale-[1.05]">
+                <button
+                  className="bg-transparent border-2 border-[#274C5B] text-[#274C5B] px-5 py-3 font-semibold lg:text-xl md:text-lg text-base rounded-[14px] shadow-md hover:shadow-xl transition duration-300 ease-in-out hover:scale-[1.05]"
+                  onClick={() => navigate("/recent-news")}
+                >
                   More News
                 </button>
               </div>
@@ -86,7 +91,10 @@ const Dsicover = () => {
                       </p>
                     </div>
                     <div>
-                      <button className="px-4 py-3 bg-[#EFD372] rounded-[14px] text-[#274C5B] font-bold lg:text-lg md:text-base text-sm shadow-md hover:scale-[1.05] transition ease-in-out duration-300 hover:shadow-lg">
+                      <button
+                        className="px-4 py-3 bg-[#EFD372] rounded-[14px] text-[#274C5B] font-bold lg:text-lg md:text-base text-sm shadow-md hover:scale-[1.05] transition ease-in-out duration-300 hover:shadow-lg"
+                        onClick={() => navigate("/blog-single")}
+                      >
                         {item.btn}
                       </button>
                     </div>

@@ -1,7 +1,9 @@
 import React from "react";
 import page from "../../assets/page.png";
+import { useNavigate } from "react-router-dom";
 
 const Main = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section
@@ -20,7 +22,10 @@ const Main = () => {
               <p className="font-normal text-[#525C60] md:text-base text-sm mb-6">
                 The page you are looking for doesn't exist or has been moved
               </p>
-              <button className="bg-[#274C5B] text-white lg:text-xl md:text-lg text-base font-bold py-3 px-5 rounded-[14px] hover:scale-[1.05] transition ease-in-out duration-300 shadow-lg hover:shadow-xl">
+              <button
+                className="bg-[#274C5B] text-white lg:text-xl md:text-lg text-base font-bold py-3 px-5 rounded-[14px] hover:scale-[1.05] transition ease-in-out duration-300 shadow-lg hover:shadow-xl"
+                onClick={() => navigate("/")}
+              >
                 Go to Homepage
               </button>
             </div>

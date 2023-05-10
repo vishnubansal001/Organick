@@ -1,7 +1,9 @@
 import React from "react";
 import hero from "../../assets/hero.png";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <>
       <section
@@ -29,7 +31,10 @@ const Hero = () => {
               </div>
             </div>
             <div>
-              <button className="px-4 py-3 bg-[#EFD372] rounded-[14px] text-[#274C5B] font-bold lg:text-lg md:text-base text-sm shadow-md hover:scale-[1.05] transition ease-in-out duration-300 hover:shadow-lg">
+              <button
+                className="px-4 py-3 bg-[#EFD372] rounded-[14px] text-[#274C5B] font-bold lg:text-lg md:text-base text-sm shadow-md hover:scale-[1.05] transition ease-in-out duration-300 hover:shadow-lg"
+                onClick={() => navigate("/services")}
+              >
                 Explore Now
               </button>
             </div>

@@ -4,8 +4,10 @@ import banana from "../../assets/banana.png";
 import nuts from "../../assets/nuts.png";
 import tomato from "../../assets/tomato.png";
 import star from "../../assets/star.png";
+import { useNavigate } from "react-router-dom";
 
 const RelatedProducts = () => {
+  const navigate = useNavigate();
   const products = [
     {
       id: 1,
@@ -58,6 +60,7 @@ const RelatedProducts = () => {
               {products?.map((item) => (
                 <div
                   key={item.id}
+                  onClick={() => navigate("/shop-single")}
                   className="bg-white p-6 rounded-[20px] shadow-lg hover:shadow-2xl transition ease-in-out duration-300 cursor-pointer flex flex-col justify-center gap-2"
                 >
                   <div className="cursor-pointer">

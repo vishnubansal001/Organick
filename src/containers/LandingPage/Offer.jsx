@@ -4,8 +4,10 @@ import Bhazelnut from "../../assets/Bhazelnut.png";
 import onion from "../../assets/onion.png";
 import cabbage from "../../assets/cabbage.png";
 import star from "../../assets/star.png";
+import { useNavigate } from "react-router-dom";
 
 const Offer = () => {
+  const navigate = useNavigate();
   const offers = [
     {
       id: 1,
@@ -59,7 +61,10 @@ const Offer = () => {
                 </h1>
               </div>
               <div>
-                <button className="px-4 py-3 bg-[#EFD372] rounded-[14px] text-[#274C5B] font-bold lg:text-lg md:text-base text-sm shadow-md hover:scale-[1.05] transition ease-in-out duration-300 hover:shadow-lg">
+                <button
+                  className="px-4 py-3 bg-[#EFD372] rounded-[14px] text-[#274C5B] font-bold lg:text-lg md:text-base text-sm shadow-md hover:scale-[1.05] transition ease-in-out duration-300 hover:shadow-lg"
+                  onClick={() => navigate("/shop")}
+                >
                   View All Product
                 </button>
               </div>
@@ -68,6 +73,7 @@ const Offer = () => {
               {offers?.map((item) => (
                 <div
                   key={item.id}
+                  onClick={() => navigate("/shop-single")}
                   className="bg-white p-6 rounded-[20px] shadow-lg hover:shadow-2xl transition ease-in-out duration-300 cursor-pointer flex flex-col justify-center gap-2"
                 >
                   <div className="cursor-pointer">

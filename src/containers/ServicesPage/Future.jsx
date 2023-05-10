@@ -6,8 +6,10 @@ import milk from "../../assets/milk.svg";
 import leave from "../../assets/leave.svg";
 import shulgum from "../../assets/shulgum.svg";
 import beetroot from "../../assets/beetroot.svg";
+import { useNavigate } from "react-router-dom";
 
 const Future = () => {
+  const navigate = useNavigate();
   const benefits1 = [
     {
       id: 1,
@@ -65,7 +67,8 @@ const Future = () => {
                 Better Future
               </h1>
             </div>
-src/containers/LandingPage/Farmers.jsx            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-[90%] mx-auto gap-5 items-center justify-center">
+            src/containers/LandingPage/Farmers.jsx{" "}
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 w-[90%] mx-auto gap-5 items-center justify-center">
               <div className="flex flex-col justify-center items-end gap-4">
                 {benefits1?.map((item) => (
                   <div
@@ -103,7 +106,10 @@ src/containers/LandingPage/Farmers.jsx            <div className="grid lg:grid-c
               </div>
             </div>
             <div>
-              <button className="px-5 transition shadow-md hover:shadow-xl ease-in-out duration-300 py-3 bg-transparent border-2 border-[#274C5B] font-bold lg:text-lg md:text-base text-sm text-[#274C5B] rounded-[14px]">
+              <button
+                className="px-5 transition shadow-md hover:shadow-xl ease-in-out duration-300 py-3 bg-transparent border-2 border-[#274C5B] font-bold lg:text-lg md:text-base text-sm text-[#274C5B] rounded-[14px]"
+                onClick={() => navigate("/quality")}
+              >
                 Explore More
               </button>
             </div>

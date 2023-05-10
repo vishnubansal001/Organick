@@ -1,9 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Farmers = ({
   ifExists,
   sectionApi: { bgImg, title, heading1, heading2, txt, data, btn },
 }) => {
+  var link = "";
+  const navigate = useNavigate();
+  if (ifExists) link = "/shop";
+  else link = "/quality";
   return (
     <>
       <section
@@ -41,7 +46,10 @@ const Farmers = ({
             <div className="flex flex-col items-center select-none">
               <div className="p-4 bg-[#274C5B] rounded-[20px] cursor-pointer hover:shadow-xl hover:scale-[1.1] transition ease-in-out duration-300">
                 <button>
-                  <p className="text-white font-bold lg:text-xl md:text-base text-sm">
+                  <p
+                    className="text-white font-bold lg:text-xl md:text-base text-sm"
+                    onClick={() => navigate(`${link}`)}
+                  >
                     {btn}
                   </p>
                   <div>

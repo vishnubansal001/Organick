@@ -7,7 +7,7 @@ const Flex1 = () => {
     <>
       <section className="flex select-none flex-col lg:gap-20 md:gap-14 pt-6 gap-10">
         <div className="flex items-center justify-center lg:py-12 md:py-10 py-8">
-          <div className="flex items-center md:flex-row flex-col w-[90%] justify-center lg:gap-8 md:gap-6 gap-4">
+          <div className="flex items-center lg:flex-row flex-col w-[90%] justify-center lg:gap-8 md:gap-6 gap-4">
             <div>
               <img src={garden} alt="img/garden.svg" />
             </div>

@@ -6,8 +6,10 @@ import vitamin from "../../assets/vitamin.png";
 import research from "../../assets/research.png";
 import everyday from "../../assets/everyday.png";
 import plastic from "../../assets/plastic.png";
+import { useNavigate } from "react-router-dom";
 
 const News = () => {
+  const navigate = useNavigate();
   const discover = [
     {
       id: 1,
@@ -114,7 +116,10 @@ const News = () => {
                       </p>
                     </div>
                     <div>
-                      <button className="px-4 py-3 bg-[#EFD372] rounded-[14px] text-[#274C5B] font-bold lg:text-lg md:text-base text-sm shadow-md hover:scale-[1.05] transition ease-in-out duration-300 hover:shadow-lg">
+                      <button
+                        className="px-4 py-3 bg-[#EFD372] rounded-[14px] text-[#274C5B] font-bold lg:text-lg md:text-base text-sm shadow-md hover:scale-[1.05] transition ease-in-out duration-300 hover:shadow-lg"
+                        onClick={() => navigate("/blog-single")}
+                      >
                         {item.btn}
                       </button>
                     </div>

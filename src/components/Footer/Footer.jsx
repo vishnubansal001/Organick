@@ -4,8 +4,10 @@ import insta from "../../assets/insta.png";
 import face from "../../assets/face.png";
 import twitter from "../../assets/twitter.png";
 import pint from "../../assets/pint.png";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   const contact = [
     {
       id: 1,
@@ -28,18 +30,37 @@ const Footer = () => {
     {
       id: 1,
       txt: "404 Not Found",
+      link: "/page-not-found",
     },
     {
       id: 2,
       txt: "Password Protected",
+      link: "/protected",
     },
     {
       id: 3,
       txt: "Licences",
+      link: "/licences",
     },
     {
       id: 4,
       txt: "Changelog",
+      link: "/changelog",
+    },
+    {
+      id: 5,
+      txt: "Contact",
+      link: "/contact-us",
+    },
+    {
+      id: 6,
+      txt: "Our Team",
+      link: "/our-team",
+    },
+    {
+      id: 7,
+      txt: "Services",
+      link: "/services",
     },
   ];
   return (
@@ -108,7 +129,10 @@ const Footer = () => {
                     key={item.id}
                     className="flex flex-col gap-2 lg:justify-start lg:items-start items-center justify-center"
                   >
-                    <p className="text-[#525C60] lg:text-base text-sm hover:underline transition ease-in-out duration-300 cursor-pointer">
+                    <p
+                      className="text-[#525C60] lg:text-base text-sm hover:underline transition ease-in-out duration-300 cursor-pointer"
+                      onClick={() => navigate(`${item.link}`)}
+                    >
                       {item.txt}
                     </p>
                   </div>
