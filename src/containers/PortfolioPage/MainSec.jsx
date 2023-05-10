@@ -5,8 +5,10 @@ import orange from "../../assets/orange.png";
 import tommato from "../../assets/tommato.png";
 import carrot from "../../assets/carrot.png";
 import raspberry from "../../assets/raspberry.png";
+import { useNavigate } from "react-router-dom";
 
 const MainSec = () => {
+  const navigate = useNavigate();
   const sections = [
     {
       id: 1,
@@ -63,9 +65,12 @@ const MainSec = () => {
                   className="lg:w-[15rem] w-[10rem] h-[10rem] p-4 rounded-[20px] cursor-pointer lg:h-[15rem] bg-center bg-cover "
                 >
                   <div
-                    className={` w-full flex h-full text-center justify-center items-center bg-white rounded-[20px]`}
+                    className={`opacity-0 hover:opacity-100 transition-all ease-linear w-full flex h-full text-center justify-center items-center bg-white rounded-[20px]`}
                   >
-                    <p className="shadow-md hover:shadow-xl cursor-pointer select-none py-2 px-4 transition duration-300 ease-in-out bg-[#7EB693] rounded-full text-white font-bold lg:text-xl md:text-lg text-base">
+                    <p
+                      className="shadow-md hover:shadow-xl cursor-pointer select-none py-2 px-4 transition duration-300 ease-in-out bg-[#7EB693] rounded-full text-white font-bold lg:text-xl md:text-lg text-base"
+                      onClick={() => navigate("/portfolio-single")}
+                    >
                       {item.arrow}
                     </p>
                   </div>
