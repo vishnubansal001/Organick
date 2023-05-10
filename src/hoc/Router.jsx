@@ -15,6 +15,7 @@ import Quality from "../pages/QualityPage/Quality";
 import Portfolio from "../pages/PortfolioPage/Portfolio";
 import PortfolioSingle from "../pages/PortfolioSinglePage/PortfolioSingle";
 import BlogSingle from "../pages/BlogSinglePage/BlogSingle";
+import ContactUs from "../pages/ContactUsPage/ContactUs";
 
 const Router = () => {
   return (
@@ -35,6 +36,7 @@ const Router = () => {
         <Route exact path="/portfolio" element={<Portfolio />}></Route>
         <Route exact path="/portfolio-single" element={<PortfolioSingle />}></Route>
         <Route exact path="/blog-single" element={<BlogSingle />}></Route>
+        <Route exact path="/contact-us" element={<ContactUs />}></Route>
       </Routes>
     </>
   );
