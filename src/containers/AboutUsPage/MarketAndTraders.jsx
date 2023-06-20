@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import circle from "../../assets/circle.png";
 import returnP from "../../assets/returnP.png";
 import fresh from "../../assets/fresh.png";
 import support from "../../assets/support.png";
 import secure from "../../assets/secure.png";
 import market from "../../assets/market.png";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const MarketAndTraders = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-out-back',
+      delay: 200,
+    });
+  }, []);
+  
   const thinking = [
     {
       id: 1,
@@ -49,7 +59,7 @@ const MarketAndTraders = () => {
   ];
   return (
     <>
-      <section className="flex select-none items-center justify-center min-h-screen h-full relative bg-white">
+      <section  data-aos="flip-left" className="flex select-none items-center justify-center min-h-screen h-full relative bg-white">
         <div className="flex items-center justify-center mx-auto p-6 sm:p-12 lg:p-16">
           <div className="flex flex-col items-center justify-center lg:gap-12 md:gap-10 gap-8 w-[90%] mx-auto">
             <div className="flex lg:flex-row flex-col justify-center items-center gap-6">
