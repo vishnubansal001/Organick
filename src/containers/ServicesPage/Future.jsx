@@ -1,56 +1,10 @@
 import React from "react";
-import almondsImg from "../../assets/almondsImg.png";
-import truck from "../../assets/truck.svg";
-import dairy from "../../assets/dairy.svg";
-import milk from "../../assets/milk.svg";
-import leave from "../../assets/leave.svg";
-import shulgum from "../../assets/shulgum.svg";
-import beetroot from "../../assets/beetroot.svg";
 import { useNavigate } from "react-router-dom";
+import { benefits1, benefits2 } from "../../database/data";
+import almondsImg from "../../assets/almondsImg.png";
 
 const Future = () => {
   const navigate = useNavigate();
-  const benefits1 = [
-    {
-      id: 1,
-      img: milk,
-      heading: "Dairy Products",
-      txt: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium Sed ut perspiciatis.",
-    },
-    {
-      id: 2,
-      img: dairy,
-      heading: "Store Services",
-      txt: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium Sed ut perspiciatis.",
-    },
-    {
-      id: 3,
-      img: truck,
-      heading: "Delivery Services",
-      txt: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium Sed ut perspiciatis.",
-    },
-  ];
-
-  const benefits2 = [
-    {
-      id: 1,
-      img: leave,
-      heading: "Agricultural Services",
-      txt: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium Sed ut perspiciatis.",
-    },
-    {
-      id: 2,
-      img: beetroot,
-      heading: "Organic Products",
-      txt: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium Sed ut perspiciatis.",
-    },
-    {
-      id: 3,
-      img: shulgum,
-      heading: "Fresh Vegetables",
-      txt: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremqlaudantium Sed ut perspiciatis.",
-    },
-  ];
   return (
     <>
       <section className="flex select-none items-center justify-center min-h-screen h-full relative bg-[#F9F8F8]">

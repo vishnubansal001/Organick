@@ -1,24 +1,8 @@
 import React from "react";
 import img from "../../assets/store.png";
+import { store } from "../../database/data";
 
 const Store = () => {
-  const store = [
-    {
-      id: 1,
-      heading: "Start with Our Company First",
-      txt: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
-    },
-    {
-      id: 2,
-      heading: "Learn How to Grow Yourself",
-      txt: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
-    },
-    {
-      id: 3,
-      heading: "Farming Strategies of Today",
-      txt: "Sed ut perspiciatis unde omnis iste natus error sit voluptat accusantium doloremque laudantium. Sed ut perspiciatis.",
-    },
-  ];
   return (
     <>
       <section className="flex select-none items-center justify-center min-h-screen h-full relative bg-[#F9F8F8] background bg-cover bg-center ">

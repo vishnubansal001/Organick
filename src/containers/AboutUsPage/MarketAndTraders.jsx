@@ -1,12 +1,8 @@
 import React, { useEffect } from "react";
-import circle from "../../assets/circle.png";
-import returnP from "../../assets/returnP.png";
-import fresh from "../../assets/fresh.png";
-import support from "../../assets/support.png";
-import secure from "../../assets/secure.png";
-import market from "../../assets/market.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { policies, thinking } from "../../database/data";
+import market from "../../assets/market.png";
 
 const MarketAndTraders = () => {
   useEffect(() => {
@@ -16,47 +12,6 @@ const MarketAndTraders = () => {
       delay: 200,
     });
   }, []);
-  
-  const thinking = [
-    {
-      id: 1,
-      img: circle,
-      heading: "100% Natural Product",
-      txt: "Simply dummy text of the printing and typesetting industry Lorem Ipsum",
-    },
-    {
-      id: 2,
-      img: circle,
-      heading: "Increases resistance",
-      txt: "Filling, and temptingly healthy, our Biona Organic Granola with Wild Berries is just the thing",
-    },
-  ];
-  const policies = [
-    {
-      id: 1,
-      img: returnP,
-      heading: "Return Policy",
-      txt: "Simply dummy text of the printintypesetting industry",
-    },
-    {
-      id: 2,
-      img: fresh,
-      heading: "100% Fresh",
-      txt: "Simply dummy text of the printintypesetting industry",
-    },
-    {
-      id: 3,
-      img: support,
-      heading: "Support 24/7",
-      txt: "Simply dummy text of the printintypesetting industry",
-    },
-    {
-      id: 4,
-      img: secure,
-      heading: "Secured Payment",
-      txt: "Simply dummy text of the printintypesetting industry",
-    },
-  ];
   return (
     <>
       <section  data-aos="flip-left" className="flex select-none items-center justify-center min-h-screen h-full relative bg-white">

@@ -1,46 +1,7 @@
 import React from "react";
-import bacardo from "../../assets/bacardo.png";
-import loreno from "../../assets/loreno.svg";
-import pelore from "../../assets/pelore.svg";
-import insta from "../../assets/insta.png";
-import face from "../../assets/face.png";
-import twitter from "../../assets/twitter.png";
+import { expertsLess } from "../../database/data";
 
 const Experts = () => {
-  const experts = [
-    {
-      id: 1,
-      img: bacardo,
-      name: "Giovani Bacardo",
-      occp: "Farmer",
-      socials: [
-        { id: 1, link: face },
-        { id: 2, link: twitter },
-      ],
-    },
-    {
-      id: 2,
-      img: loreno,
-      name: "Marianne Loreno",
-      occp: "Designer",
-      socials: [
-        { id: 1, link: insta },
-        { id: 2, link: face },
-        { id: 3, link: twitter },
-      ],
-    },
-    {
-      id: 3,
-      img: pelore,
-      name: "Riga Pelore",
-      occp: "Farmer",
-      socials: [
-        { id: 1, link: insta },
-        { id: 2, link: face },
-        { id: 3, link: twitter },
-      ],
-    },
-  ];
   return (
     <>
       <section className="flex select-none items-center justify-center min-h-screen h-full relative bg-white">
@@ -60,7 +21,7 @@ const Experts = () => {
               </p>
             </div>
             <div className="grid gap-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
-              {experts?.map((item) => (
+              {expertsLess?.map((item) => (
                 <div
                   key={item.id}
                   className="bg-[#FFFFFF] rounded-[20px] shadow-md hover:shadow-xl transition duration-300 ease-in-out"

@@ -1,58 +1,9 @@
 import React from "react";
-import leaf from "../../assets/leaf.png";
-import lemon from "../../assets/lemon.png";
-import orange from "../../assets/orange.png";
-import tommato from "../../assets/tommato.png";
-import carrot from "../../assets/carrot.png";
-import raspberry from "../../assets/raspberry.png";
 import { useNavigate } from "react-router-dom";
+import { sections } from "../../database/data";
 
 const MainSec = () => {
   const navigate = useNavigate();
-  const sections = [
-    {
-      id: 1,
-      img: lemon,
-      arrow: ">",
-      name: "Green & Tasty Lemon",
-      txt: "Fruits",
-    },
-    {
-      id: 2,
-      img: carrot,
-      arrow: ">",
-      name: "Organic Carrot",
-      txt: "Farmer",
-    },
-    {
-      id: 3,
-      img: leaf,
-      arrow: ">",
-      name: "Organic Betel Leaf",
-      txt: "Leaf",
-    },
-    {
-      id: 4,
-      img: tommato,
-      arrow: ">",
-      name: "Natural Tommato",
-      txt: "Fruits",
-    },
-    {
-      id: 5,
-      img: raspberry,
-      arrow: ">",
-      name: "Black Raspberry",
-      txt: "Farmer",
-    },
-    {
-      id: 6,
-      img: orange,
-      arrow: ">",
-      name: "Honey Orange",
-      txt: "Farmer",
-    },
-  ];
   return (
     <>
       <section className="flex select-none items-center justify-center min-h-screen h-full relative bg-[#F9F8F8]">

@@ -1,34 +1,8 @@
 import React from "react";
-import user from "../../assets/user.png";
-import favourite from "../../assets/favourite.png";
-import benefits from "../../assets/benefits.png";
 import { useNavigate } from "react-router-dom";
+import { discoverLess } from "../../database/data";
 
 const Dsicover = () => {
-  const discover = [
-    {
-      id: 1,
-      img: benefits,
-      date: "25",
-      month: "Nov",
-      person: user,
-      name: "Rachi Card",
-      heading: "The Benefits of Vitamin D & How to Get it",
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-      btn: "Read More",
-    },
-    {
-      id: 2,
-      img: favourite,
-      date: "25",
-      month: "Nov",
-      person: user,
-      name: "Rachi Card",
-      heading: "Our Favourite Summertime Tommeto",
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-      btn: "Read More",
-    },
-  ];
   const navigate = useNavigate();
   return (
     <>
@@ -59,7 +33,7 @@ const Dsicover = () => {
               </div>
             </div>
             <div className="flex md:flex-row flex-col justify-center items-center md:gap-7 gap-4">
-              {discover?.map((item) => (
+              {discoverLess?.map((item) => (
                 <div
                   key={item.id}
                   style={{ backgroundImage: `url(${item.img})` }}

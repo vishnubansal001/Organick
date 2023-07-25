@@ -1,83 +1,9 @@
 import React from "react";
-import user from "../../assets/user.png";
-import favourite from "../../assets/favourite.png";
-import benefits from "../../assets/benefits.png";
-import vitamin from "../../assets/vitamin.png";
-import research from "../../assets/research.png";
-import everyday from "../../assets/everyday.png";
-import plastic from "../../assets/plastic.png";
 import { useNavigate } from "react-router-dom";
+import { discover } from "../../database/data";
 
 const News = () => {
   const navigate = useNavigate();
-  const discover = [
-    {
-      id: 1,
-      img: benefits,
-      date: "25",
-      month: "Nov",
-      person: user,
-      name: "Rachi Card",
-      heading: "The Benefits of Vitamin D & How to Get it",
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-      btn: "Read More",
-    },
-    {
-      id: 2,
-      img: favourite,
-      date: "25",
-      month: "Nov",
-      person: user,
-      name: "Rachi Card",
-      heading: "Our Favourite Summertime Tommeto",
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-      btn: "Read More",
-    },
-    {
-      id: 3,
-      img: vitamin,
-      date: "25",
-      month: "Nov",
-      person: user,
-      name: "Rachi Card",
-      heading: "Benefits of Vitamin C & How to Get It",
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-      btn: "Read More",
-    },
-    {
-      id: 4,
-      img: research,
-      date: "25",
-      month: "Nov",
-      person: user,
-      name: "Rachi Card",
-      heading: "Research More Organic Foods",
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-      btn: "Read More",
-    },
-    {
-      id: 5,
-      img: everyday,
-      date: "25",
-      month: "Nov",
-      person: user,
-      name: "Rachi Card",
-      heading: "Everyday Fresh Fruites",
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-      btn: "Read More",
-    },
-    {
-      id: 6,
-      img: plastic,
-      date: "25",
-      month: "Nov",
-      person: user,
-      name: "Rachi Card",
-      heading: "Don't Use Plastic Product! it's Kill Nature",
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum",
-      btn: "Read More",
-    },
-  ];
   return (
     <>
       <section className="flex select-none items-center justify-center min-h-screen h-full relative bg-white">

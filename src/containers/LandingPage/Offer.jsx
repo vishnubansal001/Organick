@@ -1,51 +1,9 @@
 import React from "react";
-import mungBean from "../../assets/mungBean.png";
-import Bhazelnut from "../../assets/Bhazelnut.png";
-import onion from "../../assets/onion.png";
-import cabbage from "../../assets/cabbage.png";
-import star from "../../assets/star.png";
 import { useNavigate } from "react-router-dom";
+import { offersLess } from "../../database/data";
 
 const Offer = () => {
   const navigate = useNavigate();
-  const offers = [
-    {
-      id: 1,
-      btn: "Vegetable",
-      img: mungBean,
-      txt: "Mung Bean",
-      pCost: "$20.00",
-      cost: "$11.00",
-      img1: star,
-    },
-    {
-      id: 2,
-      btn: "Vegetable",
-      img: Bhazelnut,
-      txt: "Brown Hazelnut",
-      pCost: "$20.00",
-      cost: "$12.00",
-      img1: star,
-    },
-    {
-      id: 3,
-      btn: "Vegetable",
-      img: onion,
-      txt: "Onion",
-      pCost: "$20.00",
-      cost: "$17.00",
-      img1: star,
-    },
-    {
-      id: 4,
-      btn: "Vegetable",
-      img: cabbage,
-      txt: "Cabbage",
-      pCost: "$20.00",
-      cost: "$17.00",
-      img1: star,
-    },
-  ];
   return (
     <>
       <section className="flex select-none items-center justify-center min-h-screen h-full bg-[#274C5B] p-3 relative">
@@ -70,7 +28,7 @@ const Offer = () => {
               </div>
             </div>
             <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-6 md:gap-4 gap-3">
-              {offers?.map((item) => (
+              {offersLess?.map((item) => (
                 <div
                   key={item.id}
                   onClick={() => navigate("/shop-single")}

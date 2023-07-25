@@ -7,60 +7,10 @@ import SwiperCore, {
   Pagination,
 } from "swiper";
 import "swiper/css/bundle";
-import customer from "../../assets/Customer.png";
-import Star from "../../assets/star.png";
 import customerbg from "../../assets/customerbg.png";
+import { customers, total } from "../../database/data";
 
 const Customer = () => {
-  const total = [
-    {
-      id: 1,
-      heading: "100%",
-      txt: "Organic",
-    },
-    {
-      id: 2,
-      heading: "285",
-      txt: "Active Product",
-    },
-    {
-      id: 3,
-      heading: "350+",
-      txt: "Organic Orchads",
-    },
-    {
-      id: 4,
-      heading: "25+",
-      txt: "Years of Farming",
-    },
-  ];
-
-  const customers = [
-    {
-      id: 1,
-      img: customer,
-      star: Star,
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
-      name: "Sara Taylor",
-      position: "customer",
-    },
-    {
-      id: 2,
-      img: customer,
-      star: Star,
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
-      name: "Sara Taylor",
-      position: "customer",
-    },
-    {
-      id: 3,
-      img: customer,
-      star: Star,
-      txt: "Simply dummy text of the printing and typesetting industry. Lorem Ipsum simply dummy text of the printing and typesetting industry. Lorem Ipsum has been.",
-      name: "Sara Taylor",
-      position: "customer",
-    },
-  ];
   // SwiperCore.use([Autoplay, Navigation, Pagination]);
   return (
     <>

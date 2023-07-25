@@ -1,32 +1,7 @@
 import React from "react";
-import mungBean from "../../assets/mungBean.png";
-import Bhazelnut from "../../assets/Bhazelnut.png";
-import onion from "../../assets/onion.png";
-import cabbage from "../../assets/cabbage.png";
+import { offers } from "../../database/data";
 
 const Offer = () => {
-  const offers = [
-    {
-      id: 1,
-      img: mungBean,
-      txt: "Mung Bean",
-    },
-    {
-      id: 2,
-      img: Bhazelnut,
-      txt: "Brown Hazelnut",
-    },
-    {
-      id: 3,
-      img: onion,
-      txt: "Onion",
-    },
-    {
-      id: 4,
-      img: cabbage,
-      txt: "Cabbage",
-    },
-  ];
   return (
     <>
       <section className="flex select-none items-center justify-center min-h-screen h-full bg-[#274C5B] p-3 relative">

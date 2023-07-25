@@ -1,78 +1,7 @@
 import React from "react";
-import bacardo from "../../assets/bacardo.png";
-import loreno from "../../assets/loreno.svg";
-import pelore from "../../assets/pelore.svg";
-import insta from "../../assets/insta.png";
-import face from "../../assets/face.png";
-import twitter from "../../assets/twitter.png";
+import { experts } from "../../database/data";
 
 const Experts = () => {
-  const experts = [
-    {
-      id: 1,
-      img: bacardo,
-      name: "Giovani Bacardo",
-      occp: "Farmer",
-      socials: [
-        { id: 1, link: face },
-        { id: 2, link: twitter },
-      ],
-    },
-    {
-      id: 2,
-      img: loreno,
-      name: "Marianne Loreno",
-      occp: "Designer",
-      socials: [
-        { id: 1, link: insta },
-        { id: 2, link: face },
-        { id: 3, link: twitter },
-      ],
-    },
-    {
-      id: 3,
-      img: pelore,
-      name: "Riga Pelore",
-      occp: "Farmer",
-      socials: [
-        { id: 1, link: insta },
-        { id: 2, link: face },
-        { id: 3, link: twitter },
-      ],
-    },
-    {
-        id: 4,
-        img: pelore,
-        name: "Keira Knightley",
-        occp: "Farmer",
-        socials: [
-          { id: 1, link: face },
-          { id: 2, link: twitter },
-        ],
-      },
-      {
-        id: 5,
-        img: pelore,
-        name: "Scott Lawrence",
-        occp: "Designer",
-        socials: [
-          { id: 1, link: insta },
-          { id: 2, link: face },
-          { id: 3, link: twitter },
-        ],
-      },
-      {
-        id: 6,
-        img: pelore,
-        name: "Karen Allen",
-        occp: "Farmer",
-        socials: [
-          { id: 1, link: insta },
-          { id: 2, link: face },
-          { id: 3, link: twitter },
-        ],
-      },
-  ];
   return (
     <>
       <section className="flex select-none items-center justify-center min-h-screen h-full relative bg-white">
