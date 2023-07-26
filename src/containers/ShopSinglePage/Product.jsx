@@ -1,12 +1,18 @@
-import React, { useState } from "react";
-import img from "../../assets/nuts.png";
+import React, { useEffect, useState } from "react";
 import star from "../../assets/star.png";
+import { useParams } from "react-router-dom";
+import { products2 } from "../../database/data";
 
 const Product = () => {
   const [qty, setQty] = useState(0);
   const onclick = () => {
     setQty(qty + 1);
   };
+  const params = useParams();
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    setData(products2[params.shopID - 1]);
+  }, []);
   return (
     <>
       <section className="flex select-none flex-col lg:gap-20 md:gap-14 pt-6 gap-10 bg-[#F9F8F8]">
@@ -14,22 +20,24 @@ const Product = () => {
           <div className="flex items-center lg:flex-row flex-col lg:w-[60%] w-[90%] justify-center lg:gap-8 md:gap-6 gap-4 bg-white rounded-[20px] p-6 shadow-md">
             <div className="lg:w-[50%] flex flex-col justify-start items-start">
               <button className="text-white bg-[#274C5B] py-1 px-2 rounded-[10px] w-auto">
-                Millets
+                {data?.btn}
               </button>
-              <img src={img} alt="" />
+              <img src={data?.img} alt="" />
             </div>
             <div className="lg:w-[60%] flex flex-col justify-start place-items-start">
               <div className="gap-3 flex flex-col justify-start place-items-start">
                 <div className="grid gap-1">
                   <h1 className="text-[#274C5B] font-bold lg:text-2xl md:text-xl text-lg">
-                    Health Pistachios
+                    {data?.txt}
                   </h1>
                   <img src={star} alt="" />
                   <div className="flex justify-start items-center gap-1">
                     <p className="text-[#B8B8B8] text-sm font-semibold line-through">
-                      $20.00
+                      {data?.pCost}
                     </p>
-                    <p className="text-[#274C5B] text-base font-bold">$13.00</p>
+                    <p className="text-[#274C5B] text-base font-bold">
+                      {data?.cost}
+                    </p>
                   </div>
                 </div>
                 <div>
@@ -49,7 +57,12 @@ const Product = () => {
                   >
                     {qty}
                   </button>
-                  <button className="text-white bg-[#274C5B] px-4 py-2 rounded-[10px] font-semibold" onClick={onclick}>Add To Cart</button>
+                  <button
+                    className="text-white bg-[#274C5B] px-4 py-2 rounded-[10px] font-semibold"
+                    onClick={onclick}
+                  >
+                    Add To Cart
+                  </button>
                 </div>
               </div>
             </div>

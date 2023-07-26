@@ -12,7 +12,9 @@ const Products = () => {
             {products2?.map((item) => (
               <div
                 key={item.id}
-                onClick={() => navigate("/shop-single")}
+                onClick={() => {
+                  navigate(`/shop-single/${item.id}`);
+                }}
                 className="bg-white p-6 rounded-[20px] shadow-lg hover:shadow-2xl transition ease-in-out duration-300 cursor-pointer flex flex-col justify-center gap-2"
               >
                 <div className="cursor-pointer">
