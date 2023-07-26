@@ -20,7 +20,7 @@ const MainSec = () => {
                   >
                     <p
                       className="shadow-md hover:shadow-xl cursor-pointer select-none py-2 px-4 transition duration-300 ease-in-out bg-[#7EB693] rounded-full text-white font-bold lg:text-xl md:text-lg text-base"
-                      onClick={() => navigate("/portfolio-single")}
+                      onClick={() => navigate(`/portfolio-single/${item.id}`)}
                     >
                       {item.arrow}
                     </p>

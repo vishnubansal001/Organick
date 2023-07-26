@@ -23,18 +23,23 @@ const Router = () => {
       <Routes>
         <Route exact path="/" element={<LandingPage />}></Route>
         <Route exact path="/about-us" element={<AboutUs />}></Route>
-        <Route exact path="/shop" element={<Shop />}></Route>
+        <Route exact path="/shop" element={<Shop />}>
+          <Route exact path="/shop/:shopID" element={<ShopSingle />}></Route>
+        </Route>
         <Route exact path="/protected" element={<Protected />}></Route>
         <Route exact path="/changelog" element={<ChangeLog />}></Route>
         <Route exact path="/our-team" element={<OurTeam />}></Route>
         <Route exact path="/recent-news" element={<RecentNews />}></Route>
-        <Route exact path="/shop-single" element={<ShopSingle />}></Route>
         <Route exact path="/services" element={<Services />}></Route>
         <Route exact path="/licences" element={<Licenses />}></Route>
         <Route exact path="/page-not-found" element={<NotFound />}></Route>
         <Route exact path="/quality" element={<Quality />}></Route>
         <Route exact path="/portfolio" element={<Portfolio />}></Route>
-        <Route exact path="/portfolio-single" element={<PortfolioSingle />}></Route>
+        <Route
+          exact
+          path="/portfolio-single/:portfolioID"
+          element={<PortfolioSingle />}
+        ></Route>
         <Route exact path="/blog-single" element={<BlogSingle />}></Route>
         <Route exact path="/contact-us" element={<ContactUs />}></Route>
       </Routes>

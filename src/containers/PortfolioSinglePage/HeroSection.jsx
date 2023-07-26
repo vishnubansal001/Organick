@@ -1,12 +1,18 @@
-import React from "react";
-import bgImg from "../../assets/blackberry1.png";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
+import { sections } from "../../database/data";
 
 const HeroSection = () => {
+  const params = useParams();
+  const [data, setData] = useState(null);
+  useEffect(() => {
+    setData(sections[params.portfolioID - 1]);
+  }, []);
   return (
     <>
       <section
         className="bg-center bg-cover flex select-none items-center justify-center min-h-[70vh] h-full relative"
-        style={{ backgroundImage: `url(${bgImg})` }}
+        style={{ backgroundImage: `url(${data?.img})` }}
       >
         <div className="flex justify-end items-end mx-auto">
           <div className="flex flex-col items-end justify-end w-[90%] mx-auto lg:gap-16 md:gap-14 gap-12"></div>
@@ -15,7 +21,7 @@ const HeroSection = () => {
       <div className="flex md:flex-row flex-col lg:justify-between justify-center items-center gap-10 w-[90%] mx-auto bg-white rounded-[20px] p-10 md:mt-[-6rem] mt-[-15rem] shadow-md mb-5 relative">
         <div className="flex flex-col items-start justify-center gap-4 md:w-[50%]">
           <h1 className="font-bold text-[#274C5B] lg:text-3xl md:text-2xl text-lg">
-            Black Raspberry
+            {data?.name}
           </h1>
           <p className="font-normal text-[#525C60] md:text-base text-sm">
             Established fact that a reader will be distracted by the readable
