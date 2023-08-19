@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../assets/logo.png";
 import search from "../../assets/search.png";
+import {CgProfile} from 'react-icons/cg';
 import cart from "../../assets/cart.png";
 import { useNavigate } from "react-router-dom";
 
@@ -38,7 +39,7 @@ const Navbar = () => {
   ];
   return (
     <>
-      <div className="lg:flex justify-center bg-[#FAFAFA] items-center py-4 hidden px-4">
+      <div className="lg:flex fixed w-full z-[1000] justify-center bg-[#FAFAFA] items-center py-4 hidden px-4">
         <div className="flex w-full px-4 justify-between gap-2 items-center">
           <div className="flex justify-center items-center gap-24 pr-2">
             <div className="flex items-center justify-center">
@@ -60,12 +61,7 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex items-center justify-center gap-3 p-2">
-            <div className="flex justify-center items-center rounded-full bg-[#7EB693] p-3">
-              <button>
-                <img src={search} alt="" />
-              </button>
-            </div>
-            <div className="flex items-center justify-center gap-2 p-2 border rounded-full">
+            <div className="flex cursor-pointer items-center justify-center gap-2 p-2 border rounded-full">
               <div className="flex justify-center items-center rounded-full bg-[#274C5B] p-2">
                 <button>
                   <img src={cart} alt="" />
@@ -75,12 +71,18 @@ const Navbar = () => {
                 <p>Cart {`(${item})`}</p>
               </div>
             </div>
+            <div className="flex justify-center items-center rounded-full bg-[#7EB693]">
+              <button>
+                {/* <img src={search} alt="" /> */}
+                <CgProfile className="text-white h-auto w-12" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="relative">
-        <div className="lg:hidden flex">
+        <div className="lg:hidden flex fixed w-full z-[1000]">
           <div className="w-full px-[20px] py-[10px] z-[40]">
             <div className="flex justify-between items-center">
               <img src={logo} alt="img/logo.svg" />
