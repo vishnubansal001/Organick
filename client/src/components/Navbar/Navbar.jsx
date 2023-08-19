@@ -25,13 +25,13 @@ const Navbar = () => {
       txt: "Shop",
       link: "/shop",
     },
+    // {
+    //   id: 4,
+    //   txt: "Portfolio",
+    //   link: "/portfolio",
+    // },
     {
       id: 4,
-      txt: "Portfolio",
-      link: "/portfolio",
-    },
-    {
-      id: 5,
       txt: "News",
       link: "/recent-news",
     },
@@ -127,9 +127,9 @@ const Navbar = () => {
               <li>
                 <a onClick={() => navigate("/shop")}>shop</a>
               </li>
-              <li>
+              {/* <li>
                 <a onClick={() => navigate("/portfolio")}>portfolio</a>
-              </li>
+              </li> */}
               <li>
                 <a onClick={() => navigate("/recent-news")}>news</a>
               </li>

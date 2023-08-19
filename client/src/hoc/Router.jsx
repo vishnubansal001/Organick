@@ -33,12 +33,12 @@ const Router = () => {
         <Route exact path="/licences" element={<Licenses />}></Route>
         <Route exact path="/page-not-found" element={<NotFound />}></Route>
         <Route exact path="/quality" element={<Quality />}></Route>
-        <Route exact path="/portfolio" element={<Portfolio />}></Route>
+        {/* <Route exact path="/portfolio" element={<Portfolio />}></Route>
         <Route
           exact
           path="/portfolio-single/:portfolioID"
           element={<PortfolioSingle />}
-        ></Route>
+        ></Route> */}
         <Route exact path="/blog-single" element={<BlogSingle />}></Route>
         <Route exact path="/contact-us" element={<ContactUs />}></Route>
       </Routes>
